@@ -27,6 +27,26 @@ export default class App {
             return false;
         }
     }
+
+    calcularSalario(tipoTrabajador, horasTrabajadas)
+    {
+        let salario;
+        switch(tipoTrabajador)
+        {
+            case 1:
+                salario = 20 * horasTrabajadas;
+                break;
+            case 2:
+                salario = 22 * horasTrabajadas;
+                break;
+            case 3:
+                salario = 25 * horasTrabajadas;
+                break;
+            default:
+                salario = -1;
+        }
+        return salario;
+    }
  
 }
 
