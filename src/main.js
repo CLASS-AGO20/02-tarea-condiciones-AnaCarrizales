@@ -98,15 +98,15 @@ console.log(app.calcularSalario(3,7)); //Resultado debe ser 175
 console.log(app.calcularSalario(5,8)); //Resultado debe ser -1
 
 console.log("Probando obtenerCalificacion()")
-console.log(app.obtenerCalificacion(0));
-console.log(app.obtenerCalificacion(1));
-console.log(app.obtenerCalificacion(2));
-console.log(app.obtenerCalificacion(3));
-console.log(app.obtenerCalificacion(4));
-console.log(app.obtenerCalificacion(5));
-console.log(app.obtenerCalificacion(6));
-console.log(app.obtenerCalificacion(7));
-console.log(app.obtenerCalificacion(8));
-console.log(app.obtenerCalificacion(9));
-console.log(app.obtenerCalificacion(10));
-console.log(app.obtenerCalificacion(13));
+console.log(app.obtenerCalificacion(0)); //Resultado debe ser C
+console.log(app.obtenerCalificacion(1)); //Resultado debe ser C
+console.log(app.obtenerCalificacion(2)); //Resultado debe ser C
+console.log(app.obtenerCalificacion(3)); //Resultado debe ser C
+console.log(app.obtenerCalificacion(4)); //Resultado debe ser C
+console.log(app.obtenerCalificacion(5)); //Resultado debe ser C
+console.log(app.obtenerCalificacion(6)); //Resultado debe ser B
+console.log(app.obtenerCalificacion(7)); //Resultado debe ser B
+console.log(app.obtenerCalificacion(8)); //Resultado debe ser A
+console.log(app.obtenerCalificacion(9)); //Resultado debe ser A
+console.log(app.obtenerCalificacion(10)); //Resultado debe ser A+
+console.log(app.obtenerCalificacion(13)); //Resultado debe ser ERROR
