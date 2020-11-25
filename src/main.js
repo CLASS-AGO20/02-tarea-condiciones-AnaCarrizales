@@ -60,3 +60,9 @@ console.log(app.esPar(0)); //Resultado debe ser false
 console.log("Probando esMultiplo()")
 console.log(app.esMultiplo(8,2)); //Resultado debe ser true
 console.log(app.esMultiplo(6,4)); //Resultado debe ser false
+
+console.log("Probando calcularSalario()")
+console.log(app.calcularSalario(1,5)); //Resultado debe ser 100
+console.log(app.calcularSalario(2,6)); //Resultado debe ser 132
+console.log(app.calcularSalario(3,7)); //Resultado debe ser 175
+console.log(app.calcularSalario(5,8)); //Resultado debe ser -1
