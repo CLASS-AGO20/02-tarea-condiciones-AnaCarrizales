@@ -36,3 +36,7 @@ console.log("Probando esPar()");
 console.log(app.esPar(8)); //Resultado debe ser true
 console.log(app.esPar(5)); //Resultado debe ser false
 console.log(app.esPar(0)); //Resultado debe ser false
+
+console.log("Probando esMultiplo()")
+console.log(app.esMultiplo(8,2)); //Resultado debe ser true
+console.log(app.esMultiplo(6,4)); //Resultado debe ser false
