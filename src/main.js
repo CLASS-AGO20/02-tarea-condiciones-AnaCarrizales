@@ -77,6 +77,30 @@ export default class App {
         }
         return letra;
     }
+
+    obtenerCercano100(numero1, numero2, numero3)
+    {
+        if ((numero1 >= 100) && (numero2 > numero1) && (numero3 > numero2))
+        {
+            return numero1;
+        }
+        else if ((numero1 > numero2) && (numero3 > numero2))
+        {
+            return numero2;
+        }
+        else if ((numero1 > numero3) && (numero2 > numero3))
+        {
+            return numero3;
+        }
+        else if ((numero1 < numero2) && (numero2 < numero3))
+        {
+            return numero3;
+        }
+        else if ((numero1 == numero2) && (numero3 > numero2))
+        {
+            return numero3;
+        }
+    }
  
 }
 
@@ -110,3 +134,10 @@ console.log(app.obtenerCalificacion(8)); //Resultado debe ser A
 console.log(app.obtenerCalificacion(9)); //Resultado debe ser A
 console.log(app.obtenerCalificacion(10)); //Resultado debe ser A+
 console.log(app.obtenerCalificacion(13)); //Resultado debe ser ERROR
+
+console.log(app.obtenerCercano100(200,300,400));
+console.log(app.obtenerCercano100(300,200,400));
+console.log(app.obtenerCercano100(300,400,200));
+console.log(app.obtenerCercano100(-100,50,105));
+console.log(app.obtenerCercano100(10,20,30));
+console.log(app.obtenerCercano100(10,10,30));
