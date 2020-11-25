@@ -15,6 +15,18 @@ export default class App {
             return false;
         }
     }
+    
+    esMultiplo(numero1, numero2)
+    {
+        if(numero1 % numero2 == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
  
 }
 
