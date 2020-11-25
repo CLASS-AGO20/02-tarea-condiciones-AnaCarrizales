@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "Es par",
+      "setup": "npm install",
+      "run": "npm run test esPar.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Es múltiplo",
+      "setup": "",
+      "run": "npm run test esMultiplo.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Calcular salario",
+      "setup": "",
+      "run": "npm run test calcularSalario.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Obtener calificación",
+      "setup": "",
+      "run": "npm run test obtenerCalificacion.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Obtener cercano a 100",
+      "setup": "",
+      "run": "npm run test obtenerCercano100.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Calcular",
+      "setup": "",
+      "run": "npm run test calcular.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Costo de renta",
+      "setup": "",
+      "run": "npm run test costoRenta.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Costo de boletos",
+      "setup": "",
+      "run": "npm run test costoBoletos.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Esta en rango",
+      "setup": "",
+      "run": "npm run test estaEnRango.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
