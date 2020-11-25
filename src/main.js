@@ -47,6 +47,36 @@ export default class App {
         }
         return salario;
     }
+
+    obtenerCalificacion(calificacionNumerica)
+    {
+        let letra;
+        switch(calificacionNumerica)
+        {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                letra = "C";
+                break;
+            case 6:
+            case 7:
+                letra = "B"
+                break;
+            case 8:
+            case 9:
+                letra = "A";
+                break;
+            case 10:
+                letra ="A+"
+                break;
+            default:
+                letra = "ERROR";
+        }
+        return letra;
+    }
  
 }
 
