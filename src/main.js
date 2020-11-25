@@ -101,6 +101,33 @@ export default class App {
             return numero3;
         }
     }
+
+    calcular(numero1, numero2, operador)
+    {
+        let operacion;
+        switch(operador)
+        {
+            case '+':
+                operacion = numero1 + numero2;
+                break;
+            case '-':
+                operacion = numero1 - numero2;
+                break;
+            case '*':
+                operacion = numero1 * numero2;
+                break;
+            case '/':
+                operacion = numero1 / numero2;
+                break;
+            case '%':
+                operacion = numero1 % numero2;
+                break;
+            default:
+                operacion = -1;
+
+        }
+        return operacion;  
+    }
  
 }
 
@@ -135,9 +162,18 @@ console.log(app.obtenerCalificacion(9)); //Resultado debe ser A
 console.log(app.obtenerCalificacion(10)); //Resultado debe ser A+
 console.log(app.obtenerCalificacion(13)); //Resultado debe ser ERROR
 
-console.log(app.obtenerCercano100(200,300,400));
-console.log(app.obtenerCercano100(300,200,400));
-console.log(app.obtenerCercano100(300,400,200));
-console.log(app.obtenerCercano100(-100,50,105));
-console.log(app.obtenerCercano100(10,20,30));
-console.log(app.obtenerCercano100(10,10,30));
+console.log("Probando obtenerCercano100()");
+console.log(app.obtenerCercano100(200,300,400)); //Resultado debe ser 200
+console.log(app.obtenerCercano100(300,200,400)); //Resultado debe ser 200
+console.log(app.obtenerCercano100(300,400,200)); //Resultado debe ser 200
+console.log(app.obtenerCercano100(-100,50,105)); //Resultado debe ser 105
+console.log(app.obtenerCercano100(10,20,30)); //Resultado debe ser 30
+console.log(app.obtenerCercano100(10,10,30)); //Resultado debe ser 30
+
+console.log("Probando calcular()");
+console.log(app.calcular(8,4,'+')); //Resultado debe ser 12
+console.log(app.calcular(8,4,'-')); //Resultado debe ser 4
+console.log(app.calcular(8,4,'*')); //Resultado debe ser 32
+console.log(app.calcular(8,4,'/')); //Resultado debe ser 2
+console.log(app.calcular(8,4,'%')); //Resultado debe ser 0
+console.log(app.calcular(8,4,'{')); //Resultado debe ser -1
