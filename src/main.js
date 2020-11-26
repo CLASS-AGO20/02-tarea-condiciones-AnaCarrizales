@@ -128,7 +128,55 @@ export default class App {
         }
         return operacion;  
     }
- 
+    costoRenta(peliculas, dia)
+    {
+        let costo;
+        if((dia == 1) || (dia == 5))
+        {
+            let a = peliculas - (peliculas % 3);
+            let b = peliculas - a; 
+            if (peliculas % 3 == 0)
+            {
+                costo = 60 * (a/3); 
+            }
+            else if (peliculas % 3 != 0 && peliculas > 3) 
+            {
+                costo = 60 * (a / 3) + (b * 25);
+            }
+            else
+            {
+                costo = peliculas * 25;
+            }
+            
+        }
+        else if ((dia == 2) || (dia == 4))
+        {
+            if(peliculas % 2 == 0)
+            {
+                costo = peliculas / 2 * 25;
+            }
+            else if (peliculas % 2 != 0)
+            {
+                costo = ((peliculas - 1) / 2) * 25 + 25;
+            }
+            
+        }
+        else if (dia == 3)
+        {
+            let descuento = 21.25
+            costo = peliculas * descuento; 
+        }
+        else if ((dia == 6) || (dia == 7))
+        {
+            costo = peliculas * 25;
+        }
+        else
+        {
+            costo = -1;
+        }
+        return costo;
+    }
+
 }
 
 let app = new App();
@@ -177,3 +225,11 @@ console.log(app.calcular(8,4,'*')); //Resultado debe ser 32
 console.log(app.calcular(8,4,'/')); //Resultado debe ser 2
 console.log(app.calcular(8,4,'%')); //Resultado debe ser 0
 console.log(app.calcular(8,4,'{')); //Resultado debe ser -1
+
+console.log("Probando costoRenta()");
+console.log(app.costoRenta(6,1));
+console.log(app.costoRenta(2,1));
+console.log(app.costoRenta(5,2));
+console.log(app.costoRenta(5,3));
+console.log(app.costoRenta(4,6));
+console.log(app.costoRenta(4,8));
