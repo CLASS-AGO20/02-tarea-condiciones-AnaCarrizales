@@ -176,6 +176,45 @@ export default class App {
         }
         return costo;
     }
+    costoBoletos(boletos, zona)
+    {
+        let costo;
+        if (zona==1)
+        {
+            costo = boletos * 300;
+            if(boletos >= 7)
+            {
+                let descuento;
+                descuento = costo * 0.07;
+                costo = costo - descuento;
+            }
+        }
+        else if (zona == 2)
+        {
+            costo = boletos * 450;
+            if (boletos >= 5)
+            {
+                let descuento;
+                descuento = costo * 0.07;
+                costo = costo - descuento;
+            }
+        }
+        else if (zona == 3)
+        {
+            costo = boletos * 700;
+            if (boletos >= 3)
+            {
+                let descuento;
+                descuento = costo * 0.07;
+                costo = costo - descuento;
+            }
+        }
+        else
+        {
+            costo = -1;
+        }
+        return costo;
+    }
 
 }
 
@@ -233,3 +272,12 @@ console.log(app.costoRenta(5,2));
 console.log(app.costoRenta(5,3));
 console.log(app.costoRenta(4,6));
 console.log(app.costoRenta(4,8));
+
+console.log("Probando costoBoletos")
+console.log(app.costoBoletos(5,1));
+console.log(app.costoBoletos(8,1));
+console.log(app.costoBoletos(3,2));
+console.log(app.costoBoletos(5,2));
+console.log(app.costoBoletos(2,3));
+console.log(app.costoBoletos(4,3));
+console.log(app.costoBoletos(3,9));
