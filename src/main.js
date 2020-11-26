@@ -215,6 +215,18 @@ export default class App {
         }
         return costo;
     }
+    
+    estaEnRango(limiteInicial, limiteFinal, numero)
+    {
+        if((numero > limiteInicial) && (numero < limiteFinal))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
 }
 
@@ -273,7 +285,7 @@ console.log(app.costoRenta(5,3));
 console.log(app.costoRenta(4,6));
 console.log(app.costoRenta(4,8));
 
-console.log("Probando costoBoletos")
+console.log("Probando costoBoletos()")
 console.log(app.costoBoletos(5,1));
 console.log(app.costoBoletos(8,1));
 console.log(app.costoBoletos(3,2));
@@ -281,3 +293,7 @@ console.log(app.costoBoletos(5,2));
 console.log(app.costoBoletos(2,3));
 console.log(app.costoBoletos(4,3));
 console.log(app.costoBoletos(3,9));
+
+console.log("Probando estaEnRango()");
+console.log(app.estaEnRango(5,10,8));
+console.log(app.estaEnRango(5,10,12));
